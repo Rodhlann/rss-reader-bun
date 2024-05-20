@@ -16,6 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>RSS Reader</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Stay updated with curated RSS feeds from timpepper.dev blog topics and beyond.
+            Discover interesting content aligned with Tim Pepper's interests, studies, and work." />
+        <link rel="stylesheet" type="text/css" href="css/feeds.css" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
